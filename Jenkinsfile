@@ -6,7 +6,7 @@ pipeline {
 			steps {
 				echo '************************************************'
 				echo 'Copying Files to Jenkins Server'
-				git clone https://github.com/RockIshtaar/SimpleRepo.git
+				sh label: '', script: 'git clone https://github.com/RockIshtaar/SimpleRepo.git'
 				echo '************************************************'
 			}
 		}
@@ -18,6 +18,5 @@ pipeline {
 				echo '************************************************'
 			}
 		}
-		
 	}
 }
