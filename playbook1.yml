@@ -16,4 +16,4 @@
         mode: '0644'
         backup: yes
     - name: Start Apache
-      service: name=httpd state=started
+      service: name=httpd state=restarted
