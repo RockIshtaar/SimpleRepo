@@ -10,7 +10,7 @@
 
     - name: Copy index.html file into place
       copy:
-        src: /home/ec2-user/index.html
+        src: /var/lib/jenkins/workspace/SimpleApacheProject/index.html
         dest: /var/www/html/index.html
         owner: ec2-user
         mode: '0644'
